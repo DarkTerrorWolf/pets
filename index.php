@@ -12,7 +12,7 @@ $f3 = Base::instance();
 $f3->route('GET /', function () {
     //echo "<h1>Hello World!</h1>";
     $view = new Template();
-    echo "Pet home";
+    echo $view->render("views/home.html");
 }
 );
 
